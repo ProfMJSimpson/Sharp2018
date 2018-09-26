@@ -1,6 +1,6 @@
 %% Figure6
 
-% Author: Jesse Sharp; Last Update: 21/09/2018
+% Author: Jesse Sharp; Last Update: 26/09/2018
 % Corresponds to Figure 6
 
 
@@ -11,7 +11,7 @@ Tfinal = 50;  %Specified final time
 dt = 0.001; %Time-step
 N = Tfinal/dt+1; %Number of nodes in time discretisation
 t_y = linspace(0,Tfinal,N); %Time discretisation for plots
-omega = 0.8; %Portion of previous iteration's control maintained when updating control
+omega = 0.9; %Portion of previous iteration's control maintained when updating control
 RelTol = 1e-3; %Desired relative tolerance for convergence
 MaxIters = 250; %Number of iterations to perform before giving up if convergence is not reached
 U = zeros(1,N); %Initial guess for the control
